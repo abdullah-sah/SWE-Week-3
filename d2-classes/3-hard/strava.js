@@ -36,8 +36,16 @@ class Exercise {
 
 	pace() {
 		// 1km/second = 60km/minute
-		const pace = (this.distance / this.time) * 60;
-		return pace;
+		const pace = this.distance / this.time;
+		return `${this.distance}m:${pace}`;
+	}
+
+	beatsPerMinute() {
+		return this.heartBeats / (this.time / 60);
+	}
+
+	strideLength() {
+		return (this.distance * 1000) / this.steps;
 	}
 	
 }

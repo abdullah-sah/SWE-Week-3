@@ -12,13 +12,9 @@
     "test:d1:hard:addingArrays": "jest ./tests/d1-tests/3-hard/addingArrays --verbose --silent --runInBand",
     "test:d2:easy:athlete": "jest ./tests/d2-classes/1-easy/athlete --verbose --silent --runInBand",
     "test:d2:medium:laps": "jest ./tests/d2-classes/2-medium/laps --verbose --silent --runInBand",
-<<<<<<< HEAD
-    "test:d2:hard:strava": "jest ./tests/d2-classes/3-hard/strava --verbose --silent --runInBand --watchAll"
-=======
     "test:d2:hard:strava": "jest ./tests/d2-classes/3-hard/strava --verbose --silent --runInBand",
     "test:d3:easy:static": "jest ./tests/d3-static/1-easy/static --verbose --silent --runInBand",
     "test:d3:easy:inherit": "jest ./tests/d3-static/1-easy/inherit --verbose --silent --runInBand"
->>>>>>> 1a3823c6584755799db3004fab7cf1f04a04e861
   },
   "repository": {
     "type": "git",

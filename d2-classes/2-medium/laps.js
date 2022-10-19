@@ -17,6 +17,19 @@
 
 */
 
+class Laps {
+	constructor(lapDistance) {
+		this.lapDistance = lapDistance;
+		this.totalDistance = 0;
+		this.splits = [];
+	}
+
+	addLap(lapTime) {
+		this.splits.push(lapTime);
+		this.totalDistance += this.lapDistance;
+	}
+}
+
 
 
 module.exports = {Laps}

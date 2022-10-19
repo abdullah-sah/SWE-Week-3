@@ -10,14 +10,37 @@
             * @param {number} seconds 
             * @return {string} - in the format "4m:0s"  the seconds will be rounded to nearest integer.
         pace
-            @return {string}  -  pace per km in minutes and seconds format
+            @return {string}  -  pace per km in minutes and seconds format "4m:0s"
         beatsPerMinute
             @return {} - beatsPerMinute returns the average beats per minute as integer
         strideLength 
             @return {number} - strideLength returns the average length per stride.
 */
 
+class Exercise {
+	constructor(distance, time, heartBeats, steps) {
+		this.distance = distance;
+		this.time = time;
+		this.heartBeats = heartBeats;
+		this.steps = steps;
+	}
 
+	toMinutesAndSeconds(number) {
+		// number = how long in seconds
+		// return should be: string = how long in minutes and seconds --- format: "4m:9s"
+		// 		In 'string', seconds will be rounded to nearest integer
+		const minutes = number / 60;
+		const seconds = number % 60;
+		return `${minutes}m:${seconds}s`;
+	}
+
+	pace() {
+		// 1km/second = 60km/minute
+		const pace = (this.distance / this.time) * 60;
+		return pace;
+	}
+	
+}
 
 
 module.exports = { Exercise }

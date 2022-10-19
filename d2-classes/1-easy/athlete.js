@@ -1,5 +1,5 @@
 
-/* Define a new class called Laps
+/* Define a new class called Athlete
     The constructor will take the following arguments and set them as properties of any new instance.
 			* @param {string} name 
 			* @param {array} events -  
